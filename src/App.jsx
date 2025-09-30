@@ -1,14 +1,14 @@
 import React from 'react'
 import { Navigate, Route, Routes } from 'react-router-dom'
 import Home from './components/Home'
-import Navbar from './components/Navbar'
 import Footer from './components/Footer'
+import Header from './components/Header'
 
 function App() {
 
   return (
-    <div className="relative flex min-h-screen w-full flex-col">
-      <Navbar />
+    <div className="flex min-h-screen w-full flex-col">
+      <Header />
       <main className="flex-grow">
         <Routes>
           <Route path="/" element={<Navigate to="/home" />} />

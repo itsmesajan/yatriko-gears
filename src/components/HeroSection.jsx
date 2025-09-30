@@ -1,15 +1,26 @@
 import React from "react";
+import { PrimaryButton, SecondaryButton } from "./ui/Button";
 
 export default function HeroSection() {
   return (
-    <section className="relative h-[60vh] min-h-[480px] flex items-center justify-center text-center text-white">
-      <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: 'url("https://lh3.googleusercontent.com/aida-public/AB6AXuCcdj9vjc92sLJiw9Y--YyPODe5Vh9fU_fX-tJsoY-6IPiEfjnQdXkSCHtIAtIalK4SgxZcBnPcj9K8Pa2LjOhJwnRwFBJBl_7Wun8X5h669ZQzl7AcE62ll-mm8Tgd6LXheGzmO76_7x0RT01Out7u201MApfKqe317zhPVlOYK-Sn3LXXsR-Y4H9AXdWUIwKQ104wUCm0Nle2QRmhyYk0aGYDsR4CAHbrI7I8bHUS5cr0ZA0dZi56-8OAjYrw2J9y5uSkSaxduWA")' }}></div>
-      <div className="absolute inset-0 bg-black/50"></div>
-      <div className="relative z-10 px-4">
-        <h1 className="text-4xl md:text-6xl font-bold tracking-tight">Adventure Begins with the Right Gear</h1>
-        <p className="mt-4 text-lg max-w-2xl mx-auto">Rent or buy top-quality gear for your next journey.</p>
-        <button className="mt-8 bg-primary text-white font-bold py-3 px-8 rounded-lg hover:bg-primary/90 transition-all duration-300">Explore Products</button>
+      <section
+    className="relative flex min-h-[60vh] items-center justify-center bg-cover bg-center py-20 text-center"
+    style={{
+      backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.6) 100%), url("https://lh3.googleusercontent.com/aida-public/AB6AXuDYbhuxTJURuT7BJSCnoOSD7LwJz5ZohqFvWSFpcsDZHAGH0CFAznGprnU_fa4w1nEmE2KuN2t_7VCx6s9-Q82irfUfpmGeC7mpSso9-Y6GMl8wdbDshCLogbtL4u3gTVA-n6MojDL59LPGyRByL8X9HmYN3m-PtcgeOhi0fuwSpYnziGIr_92UK3Mt73ocUjxl-I3vYAGQIFUM7EYTJiVX8z_tqft2imqOwbdhO5TxLCqi-i6ySQSmBjR2jU_Xeqaz81A0aabisGeH")`,
+    }}
+  >
+    <div className="container mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
+      <h1 className="text-4xl font-extrabold text-white sm:text-5xl lg:text-6xl">Gear Up for Your Next Adventure</h1>
+      <p className="mt-4 text-lg text-white/90">
+        Rent or buy high-quality travel gear from Yatriko Gears. We offer a wide selection of equipment for all your travel needs, ensuring you're prepared for any journey.
+      </p>
+      <div className="mt-8 flex flex-wrap justify-center gap-4">
+        <PrimaryButton className="px-6 py-3 text-base font-bold shadow-lg">Rent Gear</PrimaryButton>
+        <SecondaryButton className="bg-background-light px-6 py-3 text-base font-bold text-primary shadow-lg hover:bg-primary/10 dark:bg-background-dark dark:text-primary dark:hover:bg-primary/20">
+          Buy Gear
+        </SecondaryButton>
       </div>
-    </section>
+    </div>
+  </section>
   );
 }

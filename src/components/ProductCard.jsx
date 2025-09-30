@@ -1,4 +1,5 @@
 // src/components/ProductCard.jsx
+import { Link } from 'lucide-react';
 import React from 'react';
 
 const TypeBadge = ({ type }) => {
@@ -13,7 +14,9 @@ const TypeBadge = ({ type }) => {
 };
 
 const ProductCard = ({ product }) => (
-  <div className="group overflow-hidden rounded-lg bg-white shadow-sm transition-shadow duration-300 hover:shadow-lg dark:bg-background-dark/50">
+  <Link 
+    to={`/product/${product.id}`} // 👈 Link to the defined route path 
+    className="group overflow-hidden rounded-lg bg-white shadow-sm transition-shadow duration-300 hover:shadow-lg dark:bg-background-dark/50">
     <div className="relative">
       {/* Image Container with aspect-square class from aspect-ratio plugin */}
       <div 
@@ -36,7 +39,7 @@ const ProductCard = ({ product }) => (
       <h4 className="text-base font-semibold text-gray-800 dark:text-gray-200">{product.name}</h4>
       <p className="text-sm text-gray-600 dark:text-gray-400">{product.description}</p>
     </div>
-  </div>
+  </Link>
 );
 
 export default ProductCard;

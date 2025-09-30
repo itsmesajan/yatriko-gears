@@ -15,7 +15,8 @@ export default {
         "background-dark": "#101c22",
       },
       fontFamily: {
-        "display": ["Plus Jakarta Sans", "sans-serif"]
+        sans: ['Montserrat', 'sans-serif'],
+        "display": ["Montserrat", "sans-serif"]
       },
       borderRadius: {
         "DEFAULT": "0.5rem", "lg": "1rem", "xl": "1.5rem", "full": "9999px"

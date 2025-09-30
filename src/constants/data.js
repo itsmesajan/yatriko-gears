@@ -63,3 +63,47 @@ export   const socialLinks = [
   { id: 7, name: 'Anker Portable Charger', description: 'Keep your devices charged', type: ['BUY'], imageUrl: 'https://lh3.googleusercontent.com/aida-public/AB6AXuD3s4OLdjyopJCALbVsGEoIMcUluUa_P2vb0-gxZIAMyJg2du_MwTLwLdBZZjvtfhesyA94PzGHm1W26HiW1cAOvgTVqQ3oLBMuKKD3LJIc8Wa6tawEUARKMttuU9ZxdEnyb2dpziirjDKsF2hDVuoC6Dd1PTeuNBx6prPDAkrvW2hZ_AEKQFAY4a1M389ZiaTX66XxECJbbv50JAe7Clg1BM5ME4-HCNQxNeYJVhHqawCmX4lenLGWZ6TF6UGB8gASTcRF-NJBuiqA' },
   { id: 8, name: 'Hydro Flask Water Bottle', description: 'Stay hydrated on the go', type: ['BUY'], imageUrl: 'https://lh3.googleusercontent.com/aida-public/AB6AXuCIVUEWabt47104ImDnOitYZWmv5sHybI7UyZ_KO0AOLGmh-axZzwBbfrWdaYZxE1g8735pWYP14nwzU37xfwPlhzmFbouKf8ZxA2Bu3mhCQhDK1mSPt4X0UWjiVhC7zSuxLNz8Sq20UoZbWBqHqpKjua_4VoJp-IyGSrp4drz0wOjEkrZnsWnuoqEhLHLfK9RfTjo6VICN_sywcrXs4r0niVcaR418A6_kGUlT-sP1D5NHyy8I269TFygRnxuOsl9_HIrCQlwycwhJ' },
 ];
+
+
+export const productDetails = {
+  name: 'Osprey Atmos AG 65',
+  description: "The Osprey Atmos AG 65 is a top-of-the-line backpacking pack designed for multi-day trips. It features Osprey's Anti-Gravity suspension system for superior comfort and ventilation.",
+  rentalPrice: '$15/day',
+  availability: 'Available',
+  retailPrice: '$300',
+  condition: 'New',
+  images: [
+    'https://lh3.googleusercontent.com/aida-public/AB6AXuDzxqlWpxe7EdQt2QgCCMGLICSWXCOoXiC_3hL4P98gT7cDOia0kIpHh4pvNliQgNtX1DlBwTe5s2U0jDnyPzTnQYWpKOdoPO3xGf8_BAGBEx6BoK6Sp_9Ax6279-ozaRRM9m4Luk8CEjUUl9zfAYS9L1gSWKNFRbMptCrtrLJqve5kYCz6eUtv2XPkqKzjxd2nH5YmuHNLbIt8Km5ha2mLDuDFZgq3raNNzmrRJA0gghinAVtkPUVJrAwRyl5mLhZpz6Vvzh7f7Wlc', // Main image
+    'https://lh3.googleusercontent.com/aida-public/AB6AXuBTmjHGDU4DJSn2V4FIKUmcQHU7jMSiEL7QnuO34byBvQs_zgnwqsEPtrknCcEgkGdofMzb4Kj_Ytr8VBncnTqr7N3hBoeP546OEgQIMRT-3O1DrAiWITEMLnULSIL__tCnZXY4iBUUp83AUzXiXzBK7PMqJ2dSy0qS_K9pqG-YAamhyDCILF7hJmg69SvG1UbrLzo0oul-zk0Jz2kd3VlMrUHLpVYlIIroCDDq0ott0WRK6UKskG2hPlQ56syPJic_4b_F8LOP-TbS',
+    'https://lh3.googleusercontent.com/aida-public/AB6AXuCc-6zELq2bFmXPvjcC4IytDi1gRMj2npQIVsTwNaSW3XBcH0UD-X89rblGdogXEqOxpBk5QfOgfH2JT5UxlTm6oAoT3KzQk6o5-hEIZw5USw-1oQaaLHRPiRrBmrSyJvvBigTrwtofc6oBPtYtt2K_-frGhZFW-Ey8UtZ9PFz6aqLv-1PUnQ9dyXlihMxkE3dgI_utiJYyGMwhSlf8zeA8ARBP0Jw_ule_ga6ZEnlfMAdnKZnuxCTY2Q5BbyamHhUqrfjwbU_5R7t-',
+    'https://lh3.googleusercontent.com/aida-public/AB6AXuDJBXKZ9vrrhwaPMSVHgG9TyXY4qT7ZQrQYMly5MPnNzkHcFmp3KucC8tbRTTRL--7Rs0b8sLdyPCxp2W6Pr2IXutYrkSlZhugKtTRRcMTX2NPjgdOE1TMLiV1ewGIwQlhugVUkFjxgPwJuROa0drrj1hfaw1L9Wd_aEbwxVO6lxvV_TScIulcifAK46Lyvlcfja2ns_uqXpMBElCaXPK77005VzvZ-ZwUUlFH7MEHyhMPq1SL2FzpQPtPy4WRv7KpVtKeegINx7fHl',
+  ],
+  reviews: [
+    {
+      id: 1,
+      user: 'Sophia Clark',
+      date: 'June 15, 2023',
+      rating: 5,
+      avatar: 'https://lh3.googleusercontent.com/aida-public/AB6AXuDD0NKy9uWKSlNrnwGSGbfXQ74A_gjHGu89vZAJOtTM-HgEn9cHucu1jKTHGE62OaZQOnoYpLM0zCfGLw5L7cRkmQ19cK1F1aOwe90LJzUESg0weUoKuHow5SUXL95EFW3aQdUIRobo4g6See3UK_c70DtyyG-apoAi5rqVhV9TO4-BxOHK275g2ZNEsTUDNd016yU0BiPs7ihKh6YLaKQhsEB2NAuN4jrMp6bVK_9gNWILRRfuytkrz31WDuzGl4M0vl9m1xFn6fEM',
+      text: "This backpack is amazing! It's incredibly comfortable even when fully loaded, and the ventilation system really works. I used it on a 5-day backpacking trip and had no issues with back pain or overheating. Highly recommend!",
+      likes: 8,
+      dislikes: 2,
+    },
+    {
+      id: 2,
+      user: 'Ethan Carter',
+      date: 'May 22, 2023',
+      rating: 4,
+      avatar: 'https://lh3.googleusercontent.com/aida-public/AB6AXuA4Rhdc0r753G3KmPTF5frX3uz1tZq5j7_lTcXbFw-arYWVcJ3H-lJ7EHxSM7ZMLXZpjyY8KkSROEf0oHHFOq4G1vqY9Vd3euofwR9Xrbtmj-ufFX_9PfbTBxUA00L7143aQihV3wEQnESTm1DhHn-ctRf1bvDCp2d_f1B9y-VnaOG43EYp70qcnyKdijl8MyL_XDctL7R2XkY1c204eGhEHlcvG1RKLGQWCUpNYxyTj-qEv3X8iiiHB9X3hZgxz4SZUWka3_m1tshR',
+      text: 'The Atmos AG 65 is a solid pack with plenty of room and features. The anti-gravity suspension is comfortable, but I found the pack to be a bit heavy overall. Good for longer trips where comfort is key.',
+      likes: 5,
+      dislikes: 1,
+    },
+    // Add more reviews for a full summary
+  ],
+  reviewSummary: {
+    averageRating: 4.5,
+    totalReviews: 12,
+    ratingsDistribution: { 5: 6, 4: 4, 3: 1, 2: 0, 1: 1 }, // Simulating 12 reviews (6+4+1+0+1=12)
+  }
+};

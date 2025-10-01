@@ -4,7 +4,7 @@ import { Search, Heart, Map } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 const navItems = [
-  { name: 'Rent', path: '/product?category=rent' },
+  { name: 'Rent', path: '/product' },
   { name: 'Buy', path: '/product?category=buy' },
   { name: 'Sell', path: '/sell' }, // Maybe 'Sell' goes to a different page
   { name: 'Trips', path: '/trips' },
@@ -19,10 +19,12 @@ const Header = () => (
           {/* Logo */}
           <div className="flex items-center gap-3">
             <Map className="h-8 w-8 text-primary" />{" "}
+            <Link to="/">
             {/* Using Map icon for the logo */}
             <h1 className="text-xl font-bold text-gray-900 dark:text-white">
               Yatriko Gears
             </h1>
+            </Link>
           </div>
           {/* Navigation */}
           <nav className="hidden md:flex items-center gap-6 text-sm font-medium">
@@ -30,7 +32,7 @@ const Header = () => (
               <Link
                 key={item.name}
                 className="text-gray-700 dark:text-gray-300 hover:text-primary dark:hover:text-primary transition-colors"
-                to={item.path} // <--- Use 'to' instead of 'href'
+                to={item.path} 
               >
                 {item.name}
               </Link>

@@ -2,6 +2,7 @@
 import React from 'react';
 import RatingStars from './ui/RatingStars';
 import { productDetails } from '../constants/data';
+import ReviewCard from './ui/ReviewCard';
 
 // --- Sub-Components ---
 
